@@ -19,10 +19,7 @@ public class atest : MonoBehaviour
 
     Stream stream;
 
-    //string a = "yqh9GvTs2VKhumavcWU4P0V7l";
-    //string b = "LiLGtRX1183OQoFmClsOMLZMRuYm3Ypuw0RfedfzURiPg9ZRbM";
-    //string c = "93867227-RShtlYh6Xvz5WoDaeKeTMqTrTgSPEZ3Nvjj3xxoNi";
-    //string d = "jaAylCwP2N7NkklIaR3nJTewUJ4Pt8M6APbG9Txx0WYzn";
+
 
 
 
