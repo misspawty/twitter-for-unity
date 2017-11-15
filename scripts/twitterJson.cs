@@ -1,5 +1,8 @@
 ﻿using System;
 
+//using JsonUtility;
+
+
 namespace Twitter {
 
     #region Basic Class
@@ -23,12 +26,44 @@ namespace Twitter {
         public bool is_quote_status;
         public int quoted_status_id;
         public string quoted_status_id_str;
+       
+        //public string json = JsonUtility.ToJson(myObject);
+        
+        //public string coordinates;
 
-        public string lang;
 
         public Entities entities;
         public Extended_Entities extended_entities;
+
+        //public Coordinates2 coordinates;
+        //public ScrubGeo scrubGeo;
     }
+
+    [Serializable]
+    public class Coordinates2
+    {
+        public string type;
+        public string[] coordinates;
+    }
+
+    [Serializable]
+    public class Coordinates
+    {
+        public long id;
+        public string id_str;
+        public string created_at;
+        public string text;
+
+        public string type;
+        public Coordinates2 coordinates;
+
+
+        //public Tweet tweet;
+    }
+
+  
+
+
     [Serializable]
     public class TweetObjectWithUser: TweetObject
     {
@@ -108,6 +143,7 @@ namespace Twitter {
         public TweetUser user;
         public bool following;
     }
+
 
     #endregion
 
@@ -279,6 +315,8 @@ namespace Twitter {
         public string user_id_str;
         public long up_to_status_id;
         public string up_to_status_id_str;
+        public string lattitude;
+        public string longtitude;
     }
 
     [Serializable]

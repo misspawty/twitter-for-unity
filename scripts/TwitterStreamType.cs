@@ -6,6 +6,7 @@
         // See detail at https://dev.twitter.com/streaming/overview/messages-types
 
         Tweet,                  // A Tweet has been posted.
+        GeoTweet,                  //Geo tweet from Flora
         StatusDeletionNotice,   // A given Tweet has been deleted.
         LocationDeletionNotice, // Geolocated data must be stripped from a range of Tweets.
         LimitNotice,            // A filtered stream has matched more Tweets than its current rate limit allows to be delivered.
